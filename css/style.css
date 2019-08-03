@@ -1,0 +1,846 @@
+body {
+	width: 1280px;
+	background: #C9C485;
+	margin: 0 auto;
+}
+
+/*↓トップページ＆共通部分↓*/
+
+/*へっだー*/
+header {
+	height: 160px;
+	width: 1280px;
+}
+
+.logo {
+	width:386px;
+	height: 90px;
+	margin: 15px 20px;
+	float: left;
+	margin-top: 37px; 
+}
+
+/*グローバルナビ*/
+.globalnav {
+	display: inline-flex;
+	justify-content: space-around;
+	margin-top: 63px;
+	margin-bottom: 0;
+	margin-right: 0;
+	padding: 0;
+	list-style:none
+0}
+
+.globalnav li {
+	margin-left: 30px;
+}
+
+.globalnav li a {
+	font-family: 'Slabo 27px', serif;
+	font-size:40px;
+	color: #C13A1E;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.globalnav li a:after {
+  border-bottom: solid 2px #C13A1E;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+
+.globalnav li a:hover::after {
+  width: 100%;
+}
+
+.globalnav li a:hover {
+	opacity: 0.5;
+}
+
+/*へっだーsns画像*/
+.headersns {
+	display: inline-flex;
+	align-items: center;
+	float: right;
+	margin-top:-63px;
+	margin-bottom: 0;
+	margin-right: 20px;
+	margin-left: 0;
+}
+
+.fbicon {
+	height: 50px;
+}
+
+.igicon {
+	height: 70px;
+}
+
+.twicon {
+	height: 50px;
+}
+
+.headersns a img {
+transition-duration: 0.4s;
+}
+	
+.headersns a img:hover {
+	opacity: 0.5;
+}
+
+
+/*へっだー内*/
+.header_in {
+	height: 40px;
+	width: 1280px;
+	background: #C13A1E;
+}
+
+/*メインビジュアル*/
+.mainvisual {
+	width: 1280px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+/*ニュース*/
+.news {
+	width: 1280px;
+	height: 440px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1280px;
+	height: 440px;
+	margin-top: 40px;
+	margin-bottom: 0;
+	background-image: url("../image/coffeeline.png") ;
+	/*border: 1px solid white;*/
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container a{
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+.container a:hover{
+	opacity: 0.7;
+}
+
+.contentsimg {
+	width: 200px;
+	height: 150px;
+}
+
+.newstxt_container {
+	width: 200px;
+	height: 150px;
+	text-align: center;
+	color: white;
+	font-family: "Rounded Mplus 1c"; 
+	padding: 0;
+	margin: 0;
+}
+
+.contentstext_title {
+	font-weight: bold;
+	color: #43240f;
+	font-size: 16px;
+	line-height: 220%;
+	background-color: white;
+}
+
+.contentstext {
+	width: 188px;
+	height: 98px;
+	background-color: white;
+	color: #43240f;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	line-height: 120%;
+	border: 1px solid white;
+}
+
+/*キャッチコピー*/
+.box {
+	width :1280px;
+	height: 520px;
+	padding: 0;
+	margin: 0;
+}
+
+.box p {
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.box p.move {
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
+  opacity: 0;
+}
+
+.copy_title {
+	font-family: 'Slabo 27px', serif;
+	font-size: 55px;
+	font-weight: bold;
+	color: white;
+	padding: 40px;
+	text-align: center;
+}
+
+.copy_text {
+	margin : 0;
+	font-size:22px;
+	font-family: "Rounded Mplus 1c"; 
+	color: #43240f;
+	text-align: center;
+	line-height: 220%;
+}
+
+/*ボタンエリア*/
+.btn_wrapper {
+	width: 1280px;
+	height: 832px; 
+	/*border: 3px solid red;*/
+}
+
+.conceptbtn_wrapper {
+	position: relative;
+	transition-duration: 0.4s;
+}
+
+.conceptbtn_wrapper:hover {
+	opacity: 0.7;
+}
+
+.conceptbtn_text {
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	margin: 0;
+	padding: 30px 30px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 55px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.concept_btn {
+	width: 1280px;
+	height: 400px;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.menubtn_wrapper{
+	width: 1280px;
+	height: 416px;
+	display: flex;
+}
+
+.drinkbtn_wrapper{
+	position: relative;
+	width: 632px;
+	height: 400px;
+	/*border: 1px solid white;*/
+	margin-top: 16px;
+	margin-right: 16px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.drinkbtn_wrapper img{
+	transition-duration: 0.3s;
+}
+
+.drinkbtn_wrapper img:hover{
+	transform: scale(1.1);	
+	transition-duration: 0.3s;
+	opacity: 0.7;
+}
+
+.drink_btn {
+	width: 632px;
+	height: 400px;
+	transition-duration: 0.3s;
+}
+
+
+.foodbtn_wrapper{
+	position: relative;
+	width: 632px;
+	height: 400px;
+	/*border: 1px solid white;*/
+	margin-top: 16px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.foodbtn_wrapper img{
+	transition-duration: 0.3s;
+}
+
+.foodbtn_wrapper img:hover{
+	transform: scale(1.1);	
+	transition-duration: 0.3s;
+	opacity: 0.7;
+}
+
+.food_btn {
+	width: 632px;
+	height: 400px;
+}
+
+/*アクセス*/
+
+.access {
+	width: 1280px;
+	height: 1024px;
+	/*border: 1px solid blue;*/
+	text-align: center;
+}
+
+.access_titel {
+	font-family: 'Slabo 27px', serif;
+	font-size: 55px;
+	font-weight: bold;
+	color: white;
+	padding-top: 30px;
+	padding-right: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.address {
+	font-size:22px;
+	font-family: "Rounded Mplus 1c"; 
+	color: #43240f;
+	margin-top: 40px; 
+	line-height: 220%;
+}
+
+.map_star {
+	width: 30px;
+	height: 30px;
+	margin: 30px 0;
+}
+
+.guide {
+	font-size:22px;
+	font-family: "Rounded Mplus 1c"; 
+	color: #43240f;
+	line-height: 220%;
+}
+
+/*SNS埋め込みエリア*/
+.sns {
+	width: 1280px;
+	height: 720px;
+	/*border: 2px solid ;*/
+	margin-top: -40px;
+	padding: 0;
+}
+
+.sns_twitter {
+	display: inline;
+	width: 632px;
+	height: 720px;
+	margin: 0;
+	padding: 0;
+}
+
+.fa-twitter {
+	font-size: 0.7em;
+	padding: 5px;
+}
+
+.twitter_title {
+	font-family: 'Slabo 27px', serif;
+	font-size: 50px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-left: 245px;
+}
+
+.twitter-timeline {
+	margin: 0;
+	padding: 0;
+}
+
+.sns_instagram {
+	float: right;
+	display: inline;
+	width: 632px;
+	height: 720px;
+	margin: 0;
+	padding: 0;
+}
+
+.fa-instagram {
+	font-size: 0.7em;
+	padding: 5px;
+}
+
+.instagram_title {
+	font-family: 'Slabo 27px', serif;
+	font-size: 55px;
+	color: white;
+	text-align: center;
+	margin-top: -74px;
+	margin-bottom: 20px;
+}
+
+#link-f5c7a308354260cfa37d8378a1516efd5fa10c3b0a8056d723e1b352f4b7b81d {
+	margin-top: 0;
+	padding: 0;
+}
+
+/*フッター*/
+footer {
+	width: 1280px;
+	height: 200px;
+	background: #C13A1E;
+}
+
+/*トップページフッター部分のみ別スタイル*/
+.footer_nav_top {
+    display: inline-flex;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 305px;
+	margin-right: 0px;
+}
+
+.footer_nav_top li a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-family: 'Slabo 27px', serif;
+	padding: 0 30px;
+	margin : 0;
+}
+
+.footer_nav_top li a:hover {
+	opacity: 0.5;
+}
+
+/*フッター共通スタイル*/
+.footer_nav {
+    display: inline-flex;
+	margin-top: 70px;
+	margin-bottom: 0px;
+	margin-left: 305px;
+	margin-right: 0px;
+}
+
+.footer_nav li a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-family: 'Slabo 27px', serif;
+	padding: 0 30px;
+	margin : 0;
+}
+
+.footer_nav li a:hover {
+	opacity: 0.5;
+}
+
+.footer_star {
+	width: 20px;
+	height: 20px;
+	margin-top: 4px; 
+}
+
+small {
+	display: block;
+	margin-top: 45px;
+	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	color: white;
+}
+
+/*↑トップページ＆共通部分↑*/
+
+/*↓コンセプト↓*/
+
+/*メインビジュアル*/
+.concept_mainvisual {
+	width: 1280px;
+	height: 600px;
+	position: relative;
+}
+
+/*コンセプトコピー*/
+.concept_title {
+	/*color: #43240f;*/
+	color: white;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: 'Slabo 27px', serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-shadow: 2px 2px 3px #43240f;
+}
+
+.caption {
+	width: 1280px;
+	height: 660px;
+	text-align: center;
+	font-family: "Rounded Mplus 1c"; 
+}
+
+.caption_title {
+	color: white;
+	font-size: 45px;
+	margin: 40px;
+	font-weight: bold;
+}
+
+.caption_text {
+	font-size: 22px;
+	color: #43240f;
+	line-height: 220%;
+}
+
+/*グリッド*/
+.lifestyle {
+	width: 1280px;
+	height: 960px;
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 6px;
+	grid-template-columns: 426px 426px 426px;
+	background: white;
+}
+
+.lifestyle_img {
+	width: 426px;
+	height: 320px;
+}
+
+.lifestyle_textcontainer {
+	width: 426px;
+	height: 320px;
+	display: table;
+}
+
+.lifestyle_text {
+	display: table-cell;
+	font-family: "Rounded Mplus 1c";
+	font-size: 22px;
+	color: #43240f;
+	line-height: 220%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*マップエリア*/
+.worldmap {
+	width: 1280px;
+	height: 840px;
+	/*border: 1px solid blue; */
+	position: relative;
+	text-align: center;
+}
+
+.worldmap_title {
+	font-size: 22px;
+	font-family: "Rounded Mplus 1c";
+	font-weight: bold;
+	color: white;
+	line-height: 220%;
+	margin-top: 45px;
+	/*border: 1px solid blue;*/
+}
+
+.map_img {
+	width: 90%;
+	margin-top: 45px;
+}
+
+.airplane {
+	width: 130px;
+	position: absolute;
+	top: 290px;
+	right: 220px;
+}
+
+.worldmap_countryname {
+	font-size: 22px;
+	font-family: "Rounded Mplus 1c";
+	color: #43240f;
+	line-height: 160%;
+	position: absolute;
+	bottom: 80px;
+	left: 80px;
+}
+
+/*↑コンセプト↑*/
+
+/*↓メニュー↓*/
+
+#drink {
+	position: relative;
+}
+
+.drinkmenu_main {
+	width: 1280px;
+	height: 600px;
+}
+
+.drinkmenu_title {
+	color: white;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: 'Slabo 27px', serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-shadow: 2px 2px 3px #43240f;
+}
+
+.drinkmenu_theme {
+	margin-top: 50px;
+	font-size : 45px;
+	color: white;
+	font-family: 'Slabo 27px', serif;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.drinkmenu_text {
+	width: 1280px;
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.drinkmenu_container {
+	border-top: 2px dashed white;
+	border-bottom: 2px dashed white;
+	width:400px;
+	padding: 30px 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Rounded Mplus 1c";
+	color: #43240f;
+}
+
+.drink_name {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.drink_caption {
+	font-size: 17px; 
+	margin-top: 15px; 
+	opacity: 0.8;
+}
+
+.drink_price {
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+#food {
+	position: relative;
+}
+
+#food img {
+	padding-top: 40px;
+}
+
+.foodkmenu_main {
+	width: 1280px;
+	height: 600px;
+}
+
+.foodmenu_title {
+	color: white;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: 'Slabo 27px', serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-shadow: 2px 2px 3px #43240f;
+}
+
+.foodmenu_theme {
+	margin-top: 50px;
+	font-size : 45px;
+	color: white;
+	font-family: 'Slabo 27px', serif;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.foodmenu_text {
+	width: 1280px;
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.foodmenu_container {
+	border-top: 2px dashed white;
+	border-bottom: 2px dashed white;
+	width:400px;
+	padding: 30px 0;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Rounded Mplus 1c";
+	color: #43240f;
+}
+
+.food_name {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.food_caption {
+	font-size: 17px; 
+	margin-top: 15px; 
+	opacity: 0.8;
+}
+
+.food_price {
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+/*↑メニュー↑*/
+
+/*↓コンタクト↓*/
+
+.contact_mainvisual {
+	width: 1280px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contact_maintitle {
+	color: white;
+	font-weight: bold;
+	font-size: 75px;
+	font-family: 'Slabo 27px', serif;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-shadow: 2px 2px 3px #43240f;
+}
+
+/*フォームエリア*/
+.contact_form {
+	width: 1280px;
+	height: 900px;
+	background-image: url(../image/coffeeline_contact.png);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+form {
+	text-align: center;
+}
+
+.contact_text {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: "Rounded Mplus 1c";
+	color: white;
+	line-height: 200%;
+	margin-top:40px;
+}
+
+input {
+	height: 40px;
+	width: 450px;
+	font-size: 22px;
+}
+
+input[type="submit"] {
+	margin-top: 40px; 
+	width: 200px;
+	height: 45px;
+	font-size: 18px;
+	font-family: "Rounded Mplus 1c";
+	border-style: none;
+	box-shadow: 2px 2px 2px black;
+}
+
+input[type="submit"]:active {
+    box-shadow: none;
+    transform: translate3d(2px, 2px, 0);
+}
+
+textarea {
+	height: 200px;
+	width: 450px;
+	font-size: 22px;
+}
+
+input, button, textarea, select {
+  　-webkit-appearance: none;
+  　-moz-appearance: none;
+ 　 appearance: none;
+	border-radius: 5px;
+}
+
+input[type="text"],
+textarea {
+  outline: none;
+  border: 1px solid white;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 7px #C13A1E;
+  border: 1px solid #C13A1E;
+}
+
+/*↑コンタクト↑*/
